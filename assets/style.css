@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+header#main-header {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  header#main-header {
+    padding: 0 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+header#main-header p {
+  color: #FFF;
+  font-size: 28px;
+}
+
+section#speakers article {
+  display: flex;
+  position: relative;
+}
+
+section#speakers article:nth-child(2n - 1) {
+  background: #545454;
+}
+
+section#speakers article.left {
+  text-align: center;
+  justify-content: flex-start;
+}
+
+section#speakers article.center {
+  text-align: center;
+  justify-content: center;
+}
+
+section#speakers article.right {
+  text-align: center;
+  justify-content: flex-end;
+}
+
+section#speakers article img {
+  max-height: 500px;
+  max-width: 100%;
+}
+
+section#speakers article .content-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFF;
+  text-align: left;
+  opacity: 0;
+  transition: all 0.2s;
+  padding: 0 120px;
+}
+
+section#speakers article.left .content-wrapper {
+  align-items: flex-end;
+}
+
+section#speakers article.center .content-wrapper {
+  align-items: center;
+} 
+
+section#speakers article.right .content-wrapper {
+  align-items: flex-start;
+}
+
+section#speakers article:hover .content-wrapper {
+  opacity: 1;
+}
+
+section#speakers article .content-wrapper h1 {
+  font-size: 62px; 
+  text-transform: uppercase;
+  line-height: 62px;
+}
+
+section#speakers article .content-wrapper h1 span {
+  font-size: 48px;
+}
+
+section#speakers article .content-wrapper p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  section#speakers article img {
+    max-width: none;
+    width: auto;
+  }
+
+  section#speakers article .content-wrapper {
+    opacity: 1;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  section#speakers article .content-wrapper h1 span {
+    display: none;
+  }  
+
+  section#speakers article .content-wrapper h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+section#em-breve {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 32px;
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section#centelhas {
+  background: #EAEAEA;
+  padding: 100px 0 170px;
+  font-size: 20px;
+  line-height: 36px;
+  position: relative;
+}
+
+section#centelhas .container {
+  max-width: 880px;
+}
+
+section#centelhas img {
+  position: absolute;
+  bottom: -67.7px;
+  left: 50%;
+  margin-left: -67.7px;
+}
+
+section#inscricao {
+  padding: 200px 30px 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#inscricao a {
+  display: block;
+  border: 3px solid#F41919;
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  text-decoration: none;
+  color: #F41919;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+section#inscricao a:hover {
+  background: #F41919;
+  color: #000;
+}
+
+section#map {
+  height: 300px;
+}
+
+section#map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+section#faq {
+  padding: 100px 0;
+  background: #F41919;
+  color: #FFF;
+}
+
+section#faq .container {
+  max-width: 900px;
+}
+
+section#faq .info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  align-items: stretch;
+  position: relative;
+  padding-left: 150px;
+}
+
+section#faq .info:first-child {
+  margin: 0;
+}
+
+section#faq .info strong {
+  transform: rotateZ(-90deg);
+  left: 0;
+  position: absolute;
+  top: 40px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  section#faq .info {
+    padding-left: 0px; 
+    flex-direction: column;
+  }
+
+  section#faq .info strong {
+    transform: none;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+section#faq .info:first-child strong {
+  left: 5px;
+}
+
+section#faq .info strong span {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+section#faq .info p {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+section#team {
+  background: #EAEAEA;
+  text-align: center;
+  padding: 60px 0;
+}
+
+section#team h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+section#team .list {
+  max-width: 1000px;
+  margin: 60px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section#team .list a {
+  display: flex;
+  max-width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 15px 30px; 
+}
+
+section#team .list a img {
+  min-height: 300px;
+}
+
+section#team .list a .content {
+  position: absolute;
+  left: 0;
+  top: 222px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  padding: 15px 30px;
+  transition: all 0.2s;
+}
+
+section#team .list a:hover .content {
+  top: 0;
+}
+
+section#team .list a .content .title {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#team .list a .content h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+section#team .list a .content p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+section#partners {
+  background: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+section#partners h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+section#partners .list {
+  margin-top: 60px;
+}
+
+section#partners .list .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section#partners .list .line:first-child {
+  margin-top: 0;
+}
+
+section#partners img {
+  max-width: 100%;
+  max-height: 100px;
+  margin: 0 30px 50px;
+}
+
+section#partners img.small {
+  max-height: 80px;
+}
+
+section#partners img.smaller {
+  max-height: 50px;
+}
+
+footer#main-footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #FFF;  
+  font-size: 18px;
+}
+
+footer#main-footer p {
+  margin: 0;
+}
+
+footer#main-footer span {
+  color: #F41919;
+}
