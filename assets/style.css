@@ -376,6 +376,7 @@ footer#main-footer {
   background: #000;
   color: #FFF;  
   font-size: 18px;
+  text-align: center;
 }
 
 footer#main-footer p {
