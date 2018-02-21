@@ -96,6 +96,7 @@ header#main-header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-top: 80px;
 }
 
 @media (max-width: 1100px) {
