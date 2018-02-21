@@ -16,6 +16,80 @@ body {
   padding: 0 30px;
 }
 
+.open-nav {
+  background: #FFF;
+  display: none;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  margin-left: -30px;
+  top: 20px;
+  box-shadow: 0 0 3px #333;
+}
+
+.open-nav img {
+  height: 32px;
+}
+
+nav#main-nav {
+  background: #FFF;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav#main-nav > a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+nav#main-nav .social {
+  display: flex;
+}
+
+nav#main-nav .social a img {
+  height: 24px;
+  margin: 0 5px;
+}
+
+@media (max-width: 970px) {
+  nav#main-nav {
+    margin-top: -500px;
+    flex-direction: column;
+    right: 20px;
+    left: 20px;
+    top: 100px;
+    width: calc(100% - 40px);
+    height: auto;
+    padding: 30px 0;
+    box-shadow: 0 0 3px #333;
+  }
+
+  nav#main-nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .open-nav {
+    display: flex;
+  }
+}
+
 header#main-header {
   height: 500px;
   display: flex;
@@ -26,9 +100,10 @@ header#main-header {
 
 @media (max-width: 1100px) {
   header#main-header {
-    padding: 0 30px;
+    padding: 80px 30px 0;
     flex-direction: column;
     text-align: center;
+    height: 600px;
   }
 }
 
@@ -280,7 +355,7 @@ section#team .list {
   justify-content: center;
 }
 
-section#team .list a {
+section#team .list .list-item {
   display: flex;
   max-width: 300px;
   height: 300px;
@@ -291,11 +366,11 @@ section#team .list a {
   margin: 0 15px 30px; 
 }
 
-section#team .list a img {
+section#team .list .list-item img {
   min-height: 300px;
 }
 
-section#team .list a .content {
+section#team .list .list-item .content {
   position: absolute;
   left: 0;
   top: 222px;
@@ -307,23 +382,23 @@ section#team .list a .content {
   transition: all 0.2s;
 }
 
-section#team .list a:hover .content {
+section#team .list .list-item:hover .content {
   top: 0;
 }
 
-section#team .list a .content .title {
+section#team .list .list-item .content .title {
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-section#team .list a .content h3 {
+section#team .list .list-item .content h3 {
   font-size: 18px;
   line-height: 24px;
-}
+} 
 
-section#team .list a .content p {
+section#team .list .list-item .content p {
   font-size: 16px;
   margin-top: 10px;
   line-height: 24px;
