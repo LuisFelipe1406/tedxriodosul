@@ -248,25 +248,17 @@ section#inscricao {
   align-items: center;
 }
 
-section#inscricao a {
+section#inscricao strong {
   display: block;
-  border: 3px solid#F41919;
   width: 100%;
   max-width: 750px;
   text-align: center;
   height: 80px;
   line-height: 80px;
-  text-decoration: none;
   color: #F41919;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
-  transition: all 0.2s;
-}
-
-section#inscricao a:hover {
-  background: #F41919;
-  color: #000;
 }
 
 section#map {
