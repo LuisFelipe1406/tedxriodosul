@@ -89,7 +89,7 @@ h1 {
 }
 
 #speakers ul li {
-  height: 300px;
+  height: 450px;
   width: calc(1200px / 2 - 100px);
   background-position: center;
   background-size: cover;
@@ -128,11 +128,18 @@ section#echo .container {
 }
 
 section#inscricao {
-  padding: 200px 30px;
+  padding: 150px 50px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#inscricao div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 0 50px;
 }
 
 section#inscricao strong {
@@ -144,6 +151,14 @@ section#inscricao strong {
   text-transform: uppercase;
   font-size: 32px;
   font-weight: 700;
+  margin-top: 50px;
+}
+
+section#inscricao p {
+  max-width: 600px;
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
 }
 
 section#inscricao a {
@@ -152,9 +167,25 @@ section#inscricao a {
   color: #fff;
   font-weight: bold;
   font-size: 26px;
-  margin-top: 15px;
+  margin-top: 30px;
   letter-spacing: 1px;
   text-decoration: none;
+}
+
+@media (max-width: 1090px) {
+  section#inscricao {
+    flex-direction: column;
+    padding: 150px 0 200px;
+  }
+
+  section#inscricao div {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  section#inscricao a {
+    font-size: 22px;
+  }
 }
 
 section#inscricao a:hover {
