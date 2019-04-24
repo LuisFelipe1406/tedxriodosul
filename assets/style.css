@@ -359,6 +359,10 @@ section#partners img.smaller {
   max-height: 50px;
 }
 
+section#partners img.big {
+  max-height: 120px;
+}
+
 footer#main-footer {
   height: 100px;
   display: flex;
