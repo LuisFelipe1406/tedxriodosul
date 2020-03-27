@@ -3247,7 +3247,7 @@ section#team .list .list-item .content p {
 }
 
 section#partners {
-  background: #fff;
+  background: #fff!important;
   text-align: left;
   padding: 60px 0;
 }
