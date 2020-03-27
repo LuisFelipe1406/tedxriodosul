@@ -3229,7 +3229,7 @@ section#team .list .list-item:hover .content {
 }
 
 section#team .list .list-item .content .title {
-  height: 48px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3241,9 +3241,9 @@ section#team .list .list-item .content h3 {
 }
 
 section#team .list .list-item .content p {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 10px;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 section#partners {
