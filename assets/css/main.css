@@ -3296,3 +3296,16 @@ section#partners img.big {
   box-sizing: border-box;
   outline: 0;
 }
+
+
+.more-info .title {
+  border-radius: 5px;
+  border: 2px solid #222;
+  position: absolute;
+  color: #292929;
+  top: 20px;
+  background: silver;
+  padding: 4px;
+  left: 20px;
+  white-space: nowrap;
+}
