@@ -166,7 +166,8 @@ $(document).ready(function() {
 $(".more-info").click(function () {
     var $title = $(this).find(".title");
     if (!$title.length) {
-        $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
+        var texto = $(this).attr("title").replace("\n","<br/>");
+        $(this).append('<span class="title">' + texto + '</span>');
     } else {
         $title.remove();
     }
