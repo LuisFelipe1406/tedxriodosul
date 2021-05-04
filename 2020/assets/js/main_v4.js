@@ -59,7 +59,7 @@ $(document).ready(function() {
     });
 
     $(".countdown")
-        .countdown("2021/10/10 14:00:00", function(event) {
+        .countdown("2020/09/20 14:00:00", function(event) {
             $(this).html(
                 event.strftime('<div>%D <span>Dias</span></div>  <div>%H<span>Horas</span></div> <div>%M<span>Minutos</span></div> <div>%S<span>Segundos</span></div>')
             );
@@ -162,3 +162,13 @@ $(document).ready(function() {
 });
 
 //http://jsfiddle.net/xaAN3/
+
+$(".more-info").click(function () {
+    var $title = $(this).find(".title");
+    if (!$title.length) {
+        var texto = $(this).attr("title").replace("\n","<br/>");
+        $(this).append('<span class="title">' + texto + '</span>');
+    } else {
+        $title.remove();
+    }
+});

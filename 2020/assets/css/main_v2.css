@@ -157,6 +157,13 @@ ul.nosyely_list {
   background-position: center center;
   position: relative;
 }
+.bg-img .overlay_dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
 .brand_item {
   opacity: 0.3;
