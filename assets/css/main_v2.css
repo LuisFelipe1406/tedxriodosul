@@ -1806,6 +1806,11 @@ footer ul.instagram_list li {
   margin: 0 0 2% 2%;
   float: left;
 }
+
+#logo_flickr {
+  margin-top: 0px;
+}
+
 footer .newsletter_form .form-control {
   background-color: #1f1039;
   border: solid 1px #1f1039;
