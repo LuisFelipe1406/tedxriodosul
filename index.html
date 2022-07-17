@@ -52,7 +52,7 @@
 <header class="header navbar fixed-top navbar-expand-md">
     <div class="container">
         <a class="navbar-brand logo img-fluid" href="#">
-            <img src="assets/img/logo-ted.svg"  alt="TEDx"/>
+            <img src="assets/img/logo-ted.svg" alt="TEDx"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-text-align-right"></span>
@@ -80,7 +80,7 @@
 <!--cover section slider -->
 <section id="home" class="home-cover">
     <div class="cover_slider owl-carousel owl-theme">
-        <div class="cover_item" style="background: url('assets/img/bg/ted_bg_principal_1.jpg');">
+        <div id="bg1" class="cover_item" style="background: url('assets/img/bg/ted_bg_principal_1.jpg');">
             <div class="slider_content">
                <div class="slider-content-inner">
                    <div class="container">
@@ -92,34 +92,35 @@
                            <p class="cover-date">
                                &nbsp;
                            </p>
-                           <a href="https://linktr.ee/TEDxRiodoSul" target="_blank" class="btn btn-primary btn-rounded" style="margin-top: 70px">
-                                Reveja as Talks!
-                           </a>
+                           <a href="https://www.instagram.com/tedxriodosul/" target="_blank" id="btnCarrosel1" class=" btn btn-primary btn-rounded">
+                            Siga Nosso Perfil!
+                            </a>
                        </div>
                    </div>
                </div>
            </div>
         </div> 
-        <div class="cover_item" style="background: url('assets/img/bg/ted_bg_principal_2.jpg');">
+        <div id="bg2" class="cover_item" style="background: url('assets/img/bg/ted_bg_principal_2.jpg');">
             <div class="slider_content">
                 <div class="slider-content-inner">
                     <div class="container">
                         <div class="slider-content-center">
                             <h2 class="cover-title">
+                                &nbsp;
                             </h2>
                             <strong class="cover-xl-text">&nbsp;</strong>
                             <p class="cover-date">
                                 &nbsp;
                             </p>
-                            <a href="https://www.youtube.com/user/TEDxTalks/search?query=tedx%20Rio%20do%20Sul" target="_blank" class=" btn btn-primary btn-rounded" style="margin-top: 70px">
-                                Assista!
+                            <a id="btnCarrosel2" class=" btn btn-primary btn-rounded">
+                                Com certeza!
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cover_item" style="background: url('assets/img/bg/ted_bg_principal_3.jpg');">
+        <div id="bg3" class="cover_item" style="background: url('assets/img/bg/ted_bg_principal_3.jpg');">
             <div class="slider_content">
                 <div class="slider-content-inner">
                     <div class="container">
@@ -131,8 +132,8 @@
                             <p class="cover-date">
                                 &nbsp;
                             </p>
-                            <a href="https://www.instagram.com/tedxriodosul/" target="_blank" class=" btn btn-primary btn-rounded" style="margin-top: 70px">
-                                Siga Nosso Perfil!
+                            <a href="https://linktr.ee/TEDxRiodoSul" target="_blank" id="btnCarrosel3" class="btn btn-primary btn-rounded">
+                                Reveja as Talks!
                             </a>
                         </div>
                     </div>
@@ -157,15 +158,14 @@
 
             <div class="col-6 col-md-4">
                 <div class="icon_box_two">
-                    <i class="ion-ios-calendar-outline"></i>
+                    <i id="iconInfo" class="ion-ios-calendar-outline"></i>
                     <div class="content">
                         <h5 class="box_title">
                             DATA
                         </h5>
                         <p>
-                            10 outubro 2021 - 14:00h a 19:30h </br>
-                            <a target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&text=TEDxRioDoSul❌&dates=20211010T170000Z%2F20211010T223000Z"><strong>Adicione a sua Agenda!</strong></a></br>
-                            <a href=https://linktr.ee/TEDxRiodoSul"><strong style="color:red">Reveja as Talks</strong></a>
+                            20 novembro 2022 - 14:00h a 19:30h </br>
+                            <a target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&text=TEDxRioDoSul | Realidades ❌&dates=20221120T170000Z%2F20221120T223000Z"><strong style="color: #c23234;">Adicione a sua Agenda!</strong></a></br>
                         </p>
                     </div>
                 </div>
@@ -173,14 +173,14 @@
 
             <div class="col-6 col-md-4">
                 <div class="icon_box_two">
-                    <i class="ion-ios-location-outline"></i>
+                    <i id="iconInfo" class="ion-ios-location-outline"></i>
                     <div class="content">
                         <h5 class="box_title">
                             LOCAL
                         </h5>
                         <p>
-                            <a href="https://cinf.com.br" target="_blank"><strong>CINF Rio do Sul | SC</strong></a> </br>
-                            Transmissão: <a href="https://www.youtube.com/channel/UC79Wqa3v_I62r1aWs51D5Bw" target="_blank"><strong>Nosso canal do Youtube</strong></a> </br>
+                            <a href="#" target="_blank"><strong>Rio do Sul | SC</strong></a> </br>
+                            Maiores informações em breve...
                         </p>
                     </div>
                 </div>
@@ -189,14 +189,14 @@
 
             <div class="col-12 col-md-8 col-sm-12 pt30">
                 <div class="icon_box_two">
-                    <i class="ion-ios-pricetag-outline"></i>
+                    <i id="iconInfo" class="ion-ios-pricetag-outline"></i>
                     <div class="content">
                         <h5 class="box_title">
                             Inscrições para attendees
                         </h5>
                         <p>
-                            100 pessoas terão uma experiência única com o TEDxRioDoSul 2021. </br>
-                            <strong style="color: red">Inscrições encerradas!</strong>
+                            100 pessoas terão uma experiência única com o TEDxRioDoSul 2022 | Realidades. </br>
+                            <strong style="color: #c23234;">Inscrições em breve</strong>
                         </p>
                     </div>
                 </div>
@@ -234,28 +234,22 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-12">
                 <p>
-                    <h4><i>Caminhos</i></h4><br/>
+                    <h4><i>Realidades</i></h4><br/>
                 </p>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <p style="line-height: 30px">
-                    Entre caminhos, o caminho está! Nos destinos, nas viagens, está também na dança e no artesanato.
-                    O caminho está nas metáforas, poesias, literaturas, nas figuras de linguagem. Até nas exatas, tem caminho na física e na astronomia. <br/>
-                    Do Latim vulgar “CAMMINUS”, de origem celta, passa a ideia de “deslocar-se, andar”.
-                    Tem tantas definições: direção, estrada, percurso, rumo, atalho, vereda. Tem tantos caminhos em nossos caminhos, tantas pessoas.
+                    Viver o real é tão complexo quanto perceber as diversas realidades. Em momentos percebida no plural e em outros momentos no singular.
+                </p>
+                <p style="line-height: 30px">
+                    Qual realidade você viveu, está vivendo e pretende viver?
+                    Encontra-se vivendo uma realidade de outros ou buscando criar ou melhorar a sua realidade?
                 </p>
             </div>
             <div class="col-12 col-md-6">
-                <p style="line-height: 30px">
-                    Tem aqueles que passam, tem os que cruzam e no meio do caminho tudo pode acontecer.
-                    O mundo está repleto de caminhos, por onde andamos há sempre novas descobertas, aprendemos, ensinamos. <br/>
-                    Dos fragmentos do caminho nós somos, é pelo caminho que nós nos encontramos, para compartilhar, para transformar.
-                </p>
-                <p>
-                    E você, para onde está indo?
-                </p>
+                
             </div>
         </div>
         <div class="row justify-content-center">            
@@ -282,10 +276,10 @@
         <div class="col-md col-sm">
             <div class="speaker_box more-info">
                 <div class="speaker_img">
-                    <img src="assets/img/speakers/Joel_Gil.jpg" alt="Joel Gil">
-                    <a href="https://www.instagram.com/joel_gil_ergonomia/" target="_blank">
+                    <img src="assets/img/speakers/ted_user_1.jpg" alt="ted user">
+                    <a href="#" target="_blank">
                         <div class="info_box">
-                            <h5 class="name"> # Joel Gil #</h5>
+                            <h5 class="name"> # Speaker Não Divulgado #</h5>
                             <p class="position"></p>
                         </div>
                     </a>
@@ -295,10 +289,10 @@
         <div class="col-md col-sm">
             <div class="speaker_box more-info">
                 <div class="speaker_img">
-                    <img src="assets/img/speakers/Caroline_Kalvelage.jpg" alt="Caroline Kalvelage">
-                    <a href="https://www.instagram.com/faveroconsultoria/" target="_blank">
+                    <img src="assets/img/speakers/ted_user_2.jpg" alt="ted user">
+                    <a href="#" target="_blank">
                         <div class="info_box">
-                            <h5 class="name"> # Caroline Kalvelage #</h5>
+                            <h5 class="name"> # Speaker Não Divulgado #</h5>
                             <p class="position"></p>
                         </div>
                     </a>
@@ -309,10 +303,10 @@
         <div class="col-md-3 col-sm-6">
             <div class="speaker_box more-info" title="">
                 <div class="speaker_img">
-                    <img src="assets/img/speakers/Joel_Rodrigues.jpg" alt="Joel Rodrigues">
-                    <a href="https://www.instagram.com/joelwoie/" target="_blank">
+                    <img src="assets/img/speakers/ted_user_1.jpg" alt="ted user">
+                    <a href="#" target="_blank">
                         <div class="info_box">
-                            <h5 class="name"> # Joel Rodrigues #</h5>
+                            <h5 class="name"> # Speaker Não Divulgado #</h5>
                             <p class="position"></p>
                         </div>
                     </a>
@@ -322,37 +316,10 @@
         <div class="col-md-3 col-sm-6">
             <div class="speaker_box more-info" title="">
                 <div class="speaker_img">
-                    <img src="assets/img/speakers/Camila_Santos.jpg" alt="Camila Santos">
-                    <a href="https://www.instagram.com/camixcustomer/" target="_blank">
+                    <img src="assets/img/speakers/ted_user_2.jpg" alt="ted user">
+                    <a href="#" target="_blank">
                         <div class="info_box">
-                            <h5 class="name"> # Camila Santos #</h5>
-                            <p class="position"></p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box more-info" title="">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/Raul_Sena.jpg" alt="Raul Sena">
-                    <a href="https://www.instagram.com/oraulsena/" target="_blank">
-                        <div class="info_box">
-                            <h5 class="name"> # Raul Sena #</h5>
-                            <p class="position"></p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box more-info" title="">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/Heloisa_Lourenco.jpg" alt="Heloisa Lourenço">
-                    <a href="https://www.instagram.com/heloisalou11/" target="_blank">
-                        <div class="info_box">
-                            <h5 class="name"> # Heloisa Lourenço #</h5>
+                            <h5 class="name"> # Speaker Não Divulgado #</h5>
                             <p class="position"></p>
                         </div>
                     </a>
@@ -363,10 +330,10 @@
         <div class="col-md-3 col-sm-6">
             <div class="speaker_box more-info" title="">
                 <div class="speaker_img">
-                    <img src="assets/img/speakers/Rodrigo_Lisboa.jpg" alt="Rodrigo Lisboa">
-                    <a href="https://www.instagram.com/palestranterodrigolisboa/" target="_blank">
+                    <img src="assets/img/speakers/ted_user_1.jpg" alt="ted user">
+                    <a href="#" target="_blank">
                         <div class="info_box">
-                            <h5 class="name"> # Rodrigo Lisboa #</h5>
+                            <h5 class="name"> # Speaker Não Divulgado #</h5>
                             <p class="position"></p>
                         </div>
                     </a>
@@ -376,10 +343,10 @@
         <div class="col-md-3 col-sm-6">
             <div class="speaker_box more-info" title="">
                 <div class="speaker_img">
-                    <img src="assets/img/speakers/Taise_Domiciano.jpg" alt="Taise Domiciano">
-                    <a href="https://www.instagram.com/guiadaporideias/" target="_blank">
+                    <img src="assets/img/speakers/ted_user_2.jpg" alt="ted user">
+                    <a href="#" target="_blank">
                         <div class="info_box">
-                            <h5 class="name"> # Taise Domiciano #</h5>
+                            <h5 class="name"> # Speaker Não Divulgado #</h5>
                             <p class="position"></p>
                         </div>
                     </a>
@@ -390,10 +357,23 @@
         <div class="col-md-3 col-sm-6">
             <div class="speaker_box more-info" title="">
                 <div class="speaker_img">
-                    <img src="assets/img/speakers/Alexandre_Weimer.jpg" alt="Alexandre Weimer">
-                    <a href="https://www.instagram.com/aleweimer/" target="_blank">
+                    <img src="assets/img/speakers/ted_user_1.jpg" alt="ted user">
+                    <a href="#" target="_blank">
                         <div class="info_box">
-                            <h5 class="name"> # Alexandre Weimer #</h5>
+                            <h5 class="name"> # Speaker Não Divulgado #</h5>
+                            <p class="position"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box more-info" title="">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/ted_user_2.jpg" alt="ted user">
+                    <a href="#" target="_blank">
+                        <div class="info_box">
+                            <h5 class="name"> # Speaker Não Divulgado #</h5>
                             <p class="position"></p>
                         </div>
                     </a>
@@ -535,9 +515,6 @@
                 <a href="https://portal.sc.senac.br/" target="_blank">
                     <img class="big" src="assets/img/partners/Senac.png" alt="Senac">
                 </a>
-                <a href="https://instagram.com/restaurantearmazemdorosa?igshid=qsydok9c88eq" target="_blank">
-                    <img class="big" src="assets/img/partners/armazem.jpeg" alt="Armazém do rosa">
-                </a>
             </div>
             <div class="line">
                 <a href="http://acirs.com.br/" target="_blank">
@@ -555,9 +532,6 @@
                     <img class="big" src="assets/img/partners/cinf.png" alt="CINF">
                 </a>
                 <img class="small" src="assets/img/partners/sebrae.png" alt="SEBRAE">
-                <a href="https://www.unidavi.edu.br" target="_blank">
-                    <img class="small" src="assets/img/partners/unidavi.png" alt="Unidavi">
-                </a>
             </div>
             <div class="line">
                 <a href="https://rocketseat.com.br/" target="_blank">
@@ -649,6 +623,7 @@
                         <a href="/2018" class="btn btn-rounded btn-primary">Edição 2018</a>
                         <a href="/2019" class="btn btn-rounded btn-primary">Edição 2019</a>
                         <a href="/2020" class="btn btn-rounded btn-primary">Edição 2020</a>
+                        <a href="/2021" class="btn btn-rounded btn-primary">Edição 2021</a>
                     </div>
                 </div>
             </div>
@@ -662,7 +637,7 @@
             <div class="col-md-6 col-12">
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     <script>document.write(new Date().getFullYear());</script> - TEDxRioDoSul © Todos os direitos reservados<br/>This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
             <div class="col-12 col-md-6 ">
                 <ul class="footer_menu">

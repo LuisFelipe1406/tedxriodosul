@@ -137,7 +137,7 @@ ul.nosyely_list {
   display: inline-block;
   padding: 25px;
   min-width: 120px;
-  background-color: #F44336;
+  background-color: #c23234;;
   color: #ffffff;
   font-size: 48px;
   font-weight: 600;
@@ -1624,10 +1624,10 @@ img {
 2. HEADER
 -------------------------------------------------------- */
 header {
-  min-height: 50px;
+  background-color: #18181c;
+  min-height: 80px;
   padding: 0;
   margin: 0;
-  margin-top: 20px;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
@@ -2414,6 +2414,7 @@ Cover
 .speaker_box {
   position: relative;
   overflow: hidden;
+  margin-bottom: 1px;
 }
 .speaker_box .speaker_img {
   position: relative;
@@ -3295,7 +3296,6 @@ section#partners img.big {
   outline: 0;
 }
 
-
 .more-info .title {
   border-radius: 5px;
   border: 2px solid #222;
@@ -3306,4 +3306,14 @@ section#partners img.big {
   padding: 4px;
   left: 20px;
   white-space: nowrap;
+}
+
+#btnCarrosel1, #btnCarrosel2, #btnCarrosel3 {
+  border-color: #c23234;
+  background-color: #c23234;
+  margin-top: 110px;
+}
+
+#iconInfo {
+  color: #c23234;;
 }

@@ -59,7 +59,7 @@ $(document).ready(function() {
     });
 
     $(".countdown")
-        .countdown("2021/10/10 14:00:00", function(event) {
+        .countdown("2022/11/20 14:00:00", function(event) {
             $(this).html(
                 event.strftime('<div>%D <span>Dias</span></div>  <div>%H<span>Horas</span></div> <div>%M<span>Minutos</span></div> <div>%S<span>Segundos</span></div>')
             );
@@ -160,5 +160,13 @@ $(document).ready(function() {
     }
 
 });
+
+// Change image bg2
+var btnCarrosel2 = document.getElementById("btnCarrosel2");
+btnCarrosel2.onclick = function() {
+    var bg2 = document.getElementById("bg2");
+
+    btnCarrosel2.innerText = "Nós também XD";
+}
 
 //http://jsfiddle.net/xaAN3/
