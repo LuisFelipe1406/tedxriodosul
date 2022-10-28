@@ -2421,7 +2421,6 @@ Cover
   overflow: hidden;
 }
 .speaker_box .speaker_img img {
-  width: 100%;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
@@ -2475,7 +2474,6 @@ Cover
   background-color: #f50136;
 }
 .speaker_box:hover .speaker_img img {
-  width: 100%;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: all ease-in-out 0.4s;
