@@ -3332,7 +3332,7 @@ section#partners img.big {
 /* For Mobile */
 @media only screen and (max-width: 800px) {
   #bg1, #bg2, #bg3 {
-    background-image: url('../img/bg/ted_bg_main_mobile.jpg');
+    background-image: url('../img/bg/ted_bg_mobile.jpg');
   }
 
   #btnCarrosel1, #btnCarrosel2, #btnCarrosel3 {
