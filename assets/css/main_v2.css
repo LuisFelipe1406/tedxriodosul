@@ -3316,3 +3316,26 @@ section#partners img.big {
 #iconInfo {
   color: #eb0028;
 }
+
+#bg1 {
+  background-image: url('../img/bg/ted_bg_main_01.jpg');
+}
+
+#bg2 {
+  background-image: url('../img/bg/ted_bg_main_02.jpg');
+}
+
+#bg3 {
+  background-image: url('../img/bg/ted_bg_main_03.jpg');
+}
+
+/* For Mobile */
+@media only screen and (max-width: 800px) {
+  #bg1, #bg2, #bg3 {
+    background-image: url('../img/bg/ted_bg_main_mobile.jpg');
+  }
+
+  #btnCarrosel1, #btnCarrosel2, #btnCarrosel3 {
+    margin-top: -20vh;
+  }
+}
