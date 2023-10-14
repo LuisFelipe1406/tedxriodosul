@@ -3318,21 +3318,21 @@ section#partners img.big {
 }
 
 #bg1 {
-  background-image: url('../img/bg/ted_bg_main_01.jpg');
+  background-image: url('../img/bg/bg_main_01.jpg');
 }
 
 #bg2 {
-  background-image: url('../img/bg/ted_bg_main_02.jpg');
+  background-image: url('../img/bg/bg_main_02.jpg');
 }
 
 #bg3 {
-  background-image: url('../img/bg/ted_bg_main_03.jpg');
+  background-image: url('../img/bg/bg_main_03.jpg');
 }
 
 /* For Mobile */
 @media only screen and (max-width: 800px) {
   #bg1, #bg2, #bg3 {
-    background-image: url('../img/bg/ted_bg_mobile.jpg');
+    background-image: url('../img/bg/bg_mobile.jpg');
   }
 
   #btnCarrosel1, #btnCarrosel2, #btnCarrosel3 {
