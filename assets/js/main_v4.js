@@ -59,7 +59,7 @@ $(document).ready(function() {
     });
 
     $(".countdown")
-        .countdown("2025/10/05 14:00:00", function(event) {
+        .countdown("2026/09/27 13:30:00", function(event) {
             $(this).html(
                 event.strftime('<div>%D <span>Dias</span></div>  <div>%H<span>Horas</span></div> <div>%M<span>Minutos</span></div> <div>%S<span>Segundos</span></div>')
             );
